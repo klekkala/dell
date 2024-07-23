@@ -88,12 +88,24 @@ class SingleAtariEnv(gym.Env):
 
         self.action_space = self.env.action_space
         self.observation_space = self.env.observation_space
+
+        # Temporarily hard code into the code for testing, and later it can be read from the file
+        # self.description = env_config.get('text_instruction', '')
+        self.description = "You control a ship that can move sideways. You must protect two buildings (one on the right and one on the left side of the screen) from flying saucers that are trying to drop bombs on them."
     
     def reset(self, **kwargs):
-        return self.env.reset(**kwargs)
+        observation = self.env.reset(**kwargs)
+        info = {'description': self.text_instruction}
+
+        # return self.env.reset(**kwargs)
+        return observation, info
 
     def step(self, action):
-        return self.env.step(action)
+        observation, reward, done, info = self.env.step(action)
+        info['description'] = self.text_instruction
+
+        # return self.env.step(action)
+        return observation, reward, done, info
 
     """
     def step(self, action):

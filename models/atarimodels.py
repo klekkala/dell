@@ -22,7 +22,7 @@ from ray.rllib.policy.sample_batch import SampleBatch
 from ray.rllib.utils.annotations import override
 from ray.rllib.utils.framework import try_import_torch
 from ray.rllib.models.torch.visionnet import VisionNetwork
-from atari_vae import VAE
+# from atari_vae import VAE
 from atari_vae import Encoder, TEncoder
 from IPython import embed
 
@@ -43,10 +43,10 @@ ATARI_GLOBAL_SHARED_BACKBONE = TEncoder(channel_in=4, ch=32, z=512)
 
 
 #if using lstm this could be used:
-ATARI_GLOBAL_SHARED_1CHANNEL_VAE = VAE(channel_in=1, z=512)
+# ATARI_GLOBAL_SHARED_1CHANNEL_VAE = VAE(channel_in=1, z=512)
 
 #if using 4stack this could be used:
-ATARI_GLOBAL_SHARED_4STACK_VAE = VAE(channel_in=1, z=512)
+# ATARI_GLOBAL_SHARED_4STACK_VAE = VAE(channel_in=1, z=512)
 
 ATARI_GLOBAL_SHARED_POLICY = nn.Sequential(
     nn.ZeroPad2d((0, 0, 0, 0)),
@@ -74,8 +74,8 @@ class SingleAtariModel(VisionNetwork):
             self._convs = Encoder(channel_in=chan_in, ch=32, z=512)
         elif '4STACK_CONT' in model_config['custom_model_config']['backbone']:
             self._convs = TEncoder(channel_in=chan_in, ch=32, z=512)
-        elif '4STACK_VAE' in model_config['custom_model_config']['backbone']:
-            self._convs = VAE(channel_in=chan_in, ch=32, z=512)
+        # elif '4STACK_VAE' in model_config['custom_model_config']['backbone']:
+            # self._convs = VAE(channel_in=chan_in, ch=32, z=512)
         else:
             self._convs = TEncoder(channel_in=chan_in, ch=32, z=512, div=model_config['custom_model_config']['div'])
 

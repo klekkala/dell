@@ -81,31 +81,31 @@ def rllib_loop(config, str_logger):
     #load the config
     #extract data from the config file
     
-    import socket
-    machine = socket.gethostname()
+    # import socket
+    # machine = socket.gethostname()
     
-    with open(configs.resource_file + '/' + args.env_name + '.yaml', 'r') as cfile:
-        config_data = yaml.safe_load(cfile)
-        print(cfile)
+    # with open(configs.resource_file + '/' + args.env_name + '.yaml', 'r') as cfile:
+    #     config_data = yaml.safe_load(cfile)
+    #     print(cfile)
     
     #update the args in the config.py file
-    print("updating resource parameters")
-    args.num_workers, args.num_envs, args.num_gpus, args.gpus_worker, args.cpus_worker, _, args.data_path = config_data[machine]
+    # print("updating resource parameters")
+    # args.num_workers, args.num_envs, args.num_gpus, args.gpus_worker, args.cpus_worker, _, args.data_path = config_data[machine]
 
     #datapaths are not loading properly fix this!
     #if args.machine == 'iGpu11':
     #    args.data_path = '/home2/kiran/'
     
-    config.update(
-                {"num_workers" : args.num_workers,
-                "num_envs_per_worker" : args.num_envs,
-                "num_gpus" : args.num_gpus, 
-                "num_gpus_per_worker" : args.gpus_worker, 
-                "num_cpus_per_worker": args.cpus_worker,
-                "train_batch_size": args.buffer_size,
-                "sgd_minibatch_size": args.batch_size
-                }
-        )
+    # config.update(
+    #             {"num_workers" : args.num_workers,
+    #             "num_envs_per_worker" : args.num_envs,
+    #             "num_gpus" : args.num_gpus, 
+    #             "num_gpus_per_worker" : args.gpus_worker, 
+    #             "num_cpus_per_worker": args.cpus_worker,
+    #             "train_batch_size": args.buffer_size,
+    #             "sgd_minibatch_size": args.batch_size
+    #             }
+    #     )
     
     if args.env_name=='beogym':
         config['env_config']['data_path']=args.data_path
@@ -205,7 +205,7 @@ def seq_train(str_logger):
         #env_config consists of which games we use
         use_config.update(
             {"env" : use_env, 
-             "env_config" : {'env': eachenv, "full_action_space": False, 'framestack': args.temporal == '4stack'},
+             "env_config" : {'env': eachenv, "full_action_space": True, 'framestack': args.temporal == '4stack'},
              "logger_config" : {
                 "type": UnifiedLogger,
                 "logdir": os.path.expanduser(args.log + '/' + args.env_name + '/' + args.set + '/'  + str_logger + "/" + eachenv + "/")
