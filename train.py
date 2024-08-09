@@ -59,7 +59,7 @@ def pick_config_env(str_env):
     elif args.env_name == 'beogym':
         use_config = configs.beogym_config
         use_env = envs.beogym[str_env]
-    elif env_name == 'carla':
+    elif args.env_name == 'carla':
         use_config = configs.carla
         use_env = envs.carla[str_env]
     return use_config, use_env

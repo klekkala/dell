@@ -64,7 +64,7 @@ def get_args():
         "--pbt", default=False, action='store_true'
     )
     parser.add_argument(
-        "--stop_timesteps", type=int, default=25000000, help="Number of timesteps to train."
+        "--stop_timesteps", type=int, default=250000, help="Number of timesteps to train."
     )
     parser.add_argument(
         "--div", type=float, default=1.0, help="Dividing by 1.0 or 255.0"
@@ -88,32 +88,32 @@ def get_args():
         "--vf_clip", type=float, default=10.0, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--buffer_size", type=int, default=20000, help="Number of timesteps to train."
+        "--buffer_size", type=int, default=1000, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--batch_size", type=int, default=2000, help="Number of timesteps to train."
+        "--batch_size", type=int, default=100, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--num_epoch", type=int, default=10, help="Number of timesteps to train."
+        "--num_epoch", type=int, default=5, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--num_workers", type=int, default=9, help="Number of GPUs each worker has"
-    )
-    
-    parser.add_argument(
-        "--num_envs", type=int, default=5, help="Number of envs each worker evaluates"
+        "--num_workers", type=int, default=1, help="Number of GPUs each worker has"
     )
     
     parser.add_argument(
-        "--num_gpus", type=float, default=.4, help="Number of GPUs each worker has"
+        "--num_envs", type=int, default=1, help="Number of envs each worker evaluates"
+    )
+    
+    parser.add_argument(
+        "--num_gpus", type=float, default=.1, help="Number of GPUs each worker has"
     )
 
     parser.add_argument(
-        "--gpus_worker", type=float, default=.2, help="Number of GPUs each worker has"
+        "--gpus_worker", type=float, default=.1, help="Number of GPUs each worker has"
     ) 
 
     parser.add_argument(
-        "--cpus_worker", type=float, default=1, help="Number of CPUs each worker has"
+        "--cpus_worker", type=float, default=.5, help="Number of CPUs each worker has"
     )
 
     #use_lstm or framestacking
