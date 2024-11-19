@@ -2,7 +2,7 @@
 
 ## Background
 
-This project is aim to create a complete system model that can be trained on multiple Atari games to obtain pre-trained models and RL policys. Afterwards, it can identify and classify tasks (Atari games) that have or have not been seen before and apply known policys or continuously increamental learn new policys to achieve a better result (reward).
+This project is aim to create a complete system model that can be trained on multiple Atari games to obtain pre-trained models and RL policys. Afterwards, it can identify and classify tasks (Atari games) that have or have not been seen before and apply known policys or continuously increamental learn new policys to achieve a better result (reward). The project is currently underway and under improvement.
 
 
 ---
@@ -43,3 +43,8 @@ example:
 ```bash
 python main.py --eval_agent --alpha 2 --beta 4 --run 1 --path '/home/student/dell_logs/agent2' --encoder clip --model_dir 'session0_max_acc.pth'
 ```
+
+## Contribution
+
+
+## License
