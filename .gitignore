@@ -1,0 +1,13 @@
+*.log
+*.out
+
+__pycache__/
+**/__pycache__/
+
+logs/
+temp/
+backup/
+data/
+checkpoint/
+epoch_results/
+epoch_results_cos/

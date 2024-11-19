@@ -83,6 +83,11 @@ mar_dict = {}
 min_rewards_dict = {}
 max_rewards_dict = {}
 embedding_dict = {}
+with open("embedding_dict.json", "r") as f:
+    embedding_dict_loaded = json.load(f)
+
+embedding_dict = {eval(k): v for k, v in embedding_dict_loaded.items()}
+
 def get_embeddings_from_env(config):
     env = gym.make(config['env_config']['env'])
     
@@ -138,7 +143,6 @@ def find_similar_embedding(curr_image_embedding, curr_text_embedding, embedding_
     return best_weights_game
 
 
-
 #Generic train fucntion that is used across all the below setups
 
 #list of envs, what is the backbone, 
@@ -151,49 +155,12 @@ def rllib_loop(config, str_logger):
         args.stop_timesteps = 20000000
 
     print("program running for, ", args.stop_timesteps)
-    #load the config
-    #extract data from the config file
-    
-    # import socket
-    # machine = socket.gethostname()
-    
-    # with open(configs.resource_file + '/' + args.env_name + '.yaml', 'r') as cfile:
-    #     config_data = yaml.safe_load(cfile)
-    #     print(cfile)
-    
-    #update the args in the config.py file
-    # print("updating resource parameters")
-    # args.num_workers, args.num_envs, args.num_gpus, args.gpus_worker, args.cpus_worker, _, args.data_path = config_data[machine]
-
-    #datapaths are not loading properly fix this!
-    #if args.machine == 'iGpu11':
-    #    args.data_path = '/home2/kiran/'
-    
-    # config.update(
-    #             {"num_workers" : args.num_workers,
-    #             "num_envs_per_worker" : args.num_envs,
-    #             "num_gpus" : args.num_gpus, 
-    #             "num_gpus_per_worker" : args.gpus_worker, 
-    #             "num_cpus_per_worker": args.cpus_worker,
-    #             "train_batch_size": args.buffer_size,
-    #             "sgd_minibatch_size": args.batch_size
-    #             }
-    #     )
     
     if args.env_name=='beogym':
         config['env_config']['data_path']=args.data_path
     
     print(config)
 
-    #COMMENTED THIS OUT BECAUSE ITS TAKING SO MUCH SPACE
-    #copy the current codebase to the log directory
-    #path = Path(args.log + "/" + args.env_name + "/" + str_logger)
-    #path = Path(args.log + "/" + args.env_name + "/" + str_logger + "/beoenv")
-    #path.mkdir(parents=True, exist_ok=True)
-    #distutils.dir_util.copy_tree("/lab/kiran/beoenv/", args.log + "/" + str_logger + "/beoenv/")
-
-    ##Training starts
-    #if args.no_tune:
     if "multiagent" in config:
         algo = MultiPPO(config=config)
         print("Using MultiPPO")

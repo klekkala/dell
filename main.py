@@ -29,27 +29,37 @@ from ray.tune.registry import get_trainable_cls
 from arguments import get_args
 import datetime
 
+import eval
+import eval_agent
+from task_mapper import train
 
 if __name__ == "__main__":
     # Load the hdf5 files into a global variable
-
     torch, nn = try_import_torch()
     args = get_args()
 
-
     ray.init(local_mode=args.local_mode)
-
     
     #log directory
     suffix = datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S")
     str_logger = args.prefix + "_" + args.set + "_" + args.shared + "_" + args.backbone + "_" + args.policy + "_" + str(args.kl_coeff) + "_" + str(args.buffer_size) + "_" + str(args.batch_size) + "_" + str(args.div) + "_" + args.temporal + "/" + suffix
 
-
+    print(str_logger)
 
     #Before you start training. run evaluate to check how much reward can a random agent do
-    if args.eval:
-        print("Implement eval")
-
+    # if args.eval:
+    #     eval.seq_train(str_logger)
 
     if args.train:
         train.seq_train(str_logger)
+
+    if args.eval_agent:
+        eval_agent.eval_agent(str_logger)
+
+    if args.pre_task_mapper:
+        trainer = train.FSCILTrainer(args)
+        trainer.train(0)
+    
+    # if args.test:
+    #     trainer = train.FSCILTrainer(args)
+    #     trainer.train(6)

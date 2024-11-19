@@ -88,12 +88,21 @@ class SingleAtariEnv(gym.Env):
 
         self.action_space = self.env.action_space
         self.observation_space = self.env.observation_space
+        self.obs_list = []
     
     def reset(self, **kwargs):
         return self.env.reset(**kwargs)
 
     def step(self, action):
-        return self.env.step(action)
+        observation, reward, done, info = self.env.step(action)
+        if np.random.rand() < 0.1 and len(self.obs_list) < 3:
+            self.obs_list.append(observation)
+        # return self.env.step(action)
+        return observation, reward, done, info
+
+    def get_random_obs(self):
+        # return random.choice(self.obs_list) if self.obs_list else None
+        return self.obs_list
 
     """
     def step(self, action):

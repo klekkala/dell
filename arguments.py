@@ -24,11 +24,13 @@ def get_args():
         "--machine", type=str, default="", help="machine to be training"
     )
     parser.add_argument(
-        "--log", type=str, default="/lab/kiran/logs/rllib", help="config file for resources"
+        # "--log", type=str, default="/lab/kiran/logs/rllib", help="config file for resources"
+        "--log", type=str, default="/home/student/dell_logs/liqiang/logs", help="config file for resources"
     )
 
     parser.add_argument(
-        "--ckpt", type=str, default="/lab/kiran/ckpts/pretrained/", help="directory for saving resources"
+        # "--ckpt", type=str, default="/lab/kiran/ckpts/pretrained/", help="directory for saving resources"
+        "--ckpt", type=str, default="/home/student/dell_logs/liqiang/ckpts/", help="directory for saving resources"
     ) 
     parser.add_argument(
         "--env_name", type=str, default="atari", help="Environment name"
@@ -64,7 +66,8 @@ def get_args():
         "--pbt", default=False, action='store_true'
     )
     parser.add_argument(
-        "--stop_timesteps", type=int, default=25000000, help="Number of timesteps to train."
+        # "--stop_timesteps", type=int, default=25000000, help="Number of timesteps to train."
+        "--stop_timesteps", type=int, default=250000, help="Number of timesteps to train."
     )
     parser.add_argument(
         "--div", type=float, default=1.0, help="Dividing by 1.0 or 255.0"
@@ -91,13 +94,15 @@ def get_args():
         "--buffer_size", type=int, default=20000, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--batch_size", type=int, default=2000, help="Number of timesteps to train."
+        # "--batch_size", type=int, default=2000, help="Number of timesteps to train."
+        "--batch_size", type=int, default=1024, help="Number of timesteps to train."
     )
     parser.add_argument(
         "--num_epoch", type=int, default=10, help="Number of timesteps to train."
     )
     parser.add_argument(
-        "--num_workers", type=int, default=9, help="Number of GPUs each worker has"
+        # "--num_workers", type=int, default=9, help="Number of GPUs each worker has"
+        "--num_workers", type=int, default=5, help="Number of GPUs each worker has"
     )
     
     parser.add_argument(
@@ -113,7 +118,8 @@ def get_args():
     ) 
 
     parser.add_argument(
-        "--cpus_worker", type=float, default=1, help="Number of CPUs each worker has"
+        # "--cpus_worker", type=float, default=1, help="Number of CPUs each worker has"
+        "--cpus_worker", type=float, default=0.8, help="Number of CPUs each worker has"
     )
 
     #use_lstm or framestacking
@@ -129,6 +135,62 @@ def get_args():
         action="store_true",
         help="Init Ray in local mode for easier debugging.",
     )
+
+    parser.add_argument('--alpha', type=int, default=5, help='Number of unique games')
+    parser.add_argument('--beta', type=int, default=10, help='Total number of games')
+    parser.add_argument('--path', type=str, help='Path to save agent and resources folder')
+    parser.add_argument("--run", type=int, default=3, help="Number of Run of all games")
+    parser.add_argument(
+        "--eval_agent", action='store_true'
+    )
+    parser.add_argument(
+        "--pre_task_mapper", action='store_true'
+    )
+    # parser.add_argument(
+    #     "--test", action='store_true'
+    # )
+    parser.add_argument("--mapper_mode", type=str, default='cec')
+    parser.add_argument("--pre_class", type=int, help='Path to remember previous classify result')
+
+    parser.add_argument('--model_dir', type=str, default=None, help='loading model parameter from a specific dir')
+    parser.add_argument('--set_no_val', action='store_true', help='set validation using test set or no validation')
+    parser.add_argument('--encoder', type=str, default='clip', choices=['clip', 'random', 'vae'], help='obs encoder function')
+
+
+    # about pre-training
+    parser.add_argument('--epochs_base', type=int, default=5) # 1 5 #100)
+    
+    parser.add_argument('--epochs_new', type=int, default=15)# 1 5 #100)
+    parser.add_argument('--lr_base', type=float, default=0.1)
+    parser.add_argument('--lr_new', type=float, default=0.1)
+    parser.add_argument('--schedule', type=str, default='Step',
+                        choices=['Step', 'Milestone'])
+    parser.add_argument('--milestones', nargs='+', type=int, default=[60, 70])
+    parser.add_argument('--step', type=int, default=40)
+    parser.add_argument('--decay', type=float, default=0.0005)
+    parser.add_argument('--momentum', type=float, default=0.9)
+    # parser.add_argument('-gamma', type=float, default=0.1)
+    parser.add_argument('--temperature', type=int, default=16)
+    parser.add_argument('--not_data_init', action='store_true', help='using average data embedding to init or not')
+
+    parser.add_argument('--batch_size_base', type=int, default=128)
+    parser.add_argument('--batch_size_new', type=int, default=0, help='set 0 will use all the availiable training image for new')
+    parser.add_argument('--test_batch_size', type=int, default=100)
+    parser.add_argument('--base_mode', type=str, default='ft_cos',
+                        choices=['ft_dot', 'ft_cos']) # ft_dot means using linear classifier, ft_cos means using cosine classifier
+    parser.add_argument('--new_mode', type=str, default='avg_cos',
+                        choices=['ft_dot', 'ft_cos', 'avg_cos']) # ft_dot means using linear classifier, ft_cos means using cosine classifier, avg_cos means using average data embedding and cosine classifier
+
+    # for episode learning
+    parser.add_argument('--train_episode', type=int, default=50)
+    parser.add_argument('--episode_shot', type=int, default=1)
+    parser.add_argument('--episode_way', type=int, default=5)
+    parser.add_argument('--episode_query', type=int, default=15) # query class has stayed the same throughout testing
+
+    # for cec
+    parser.add_argument('--lrg', type=float, default=0.1) #lr for graph attention network
+    parser.add_argument('--low_shot', type=int, default=1)
+    parser.add_argument('--low_way', type=int, default=5)
 
     args = parser.parse_args()
 
