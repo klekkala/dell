@@ -91,7 +91,7 @@ class SingleAtariEnv(gym.Env):
 
         # Temporarily hard code into the code for testing, and later it can be read from the file
         # self.description = env_config.get('description', '')
-        self.description = "You control a ship that can move sideways. You must protect two buildings (one on the right and one on the left side of the screen) from flying saucers that are trying to drop bombs on them."
+        # self.description = desc_dict[config['env_config']['env']]
     
     def reset(self, **kwargs):
         # observation = self.env.reset(**kwargs)
@@ -102,7 +102,7 @@ class SingleAtariEnv(gym.Env):
 
     def step(self, action):
         observation, reward, done, info = self.env.step(action)
-        info['description'] = self.description
+        # info['description'] = self.description
 
         return observation, reward, done, info
         # return self.env.step(action)

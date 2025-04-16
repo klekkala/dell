@@ -29,7 +29,8 @@ from ray.tune.registry import get_trainable_cls
 from arguments import get_args
 import datetime
 
-import task
+import eval_agent
+import task_mapper
 
 
 if __name__ == "__main__":
@@ -55,7 +56,9 @@ if __name__ == "__main__":
 
     if args.train:
         train.seq_train(str_logger)
+    
+    if args.eval_agent:
+        eval_agent.eval_agent(str_logger)
 
-
-    if args.task:
-        task.apply_policy()
+    if args.pre_task_mapper:
+        task_mapper.train()

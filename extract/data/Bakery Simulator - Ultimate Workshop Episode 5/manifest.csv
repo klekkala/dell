@@ -1,0 +1,3 @@
+video_name,video_source,duration_sec,scenarios,deid_scrubbed_audio,deid_scrubbed_faces,physical_setting_name,fb_participant_id,is_stereo,is_grouped,group_video_uids,display_resolution_width,display_resolution_height,sample_resolution_width,sample_resolution_height,release_1
+Bakery Simulator - Ultimate Workshop Episode 5,https://www.youtube.com/watch?v=GjgC_VPO2Xk&list=PLCiuXKb2dSVqGgmRDN2pYLG1z71_eSVTi,2719,"The player is playing a baking game from a first person perspective, buying ingredients and then selling them
+",FALSE,TRUE,"Kitchen, street",,FALSE,FALSE,,640,360,640,360,TRUE

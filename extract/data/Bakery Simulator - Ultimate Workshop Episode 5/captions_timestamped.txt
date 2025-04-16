@@ -1,0 +1,348 @@
+0:00 #C The player is navigating a bakery's storage and preparation area in a first-person game.
+0:01 #C The player is viewing their in-game progress, which shows they are on day 23, level 17, have a reputation of 21, and are tracking their orders at different bakeries.
+0:02 #C The player is navigating a blurry, seemingly indoor environment, possibly a store, with a HUD displaying their in-game currency and other options.
+0:03 #C The player is viewing a menu of locations and rewards in a game, likely planning their next move based on a displayed map.
+0:04 #C The player is viewing a menu showing available bakery orders and a map of their delivery area in a delivery-based game.
+0:05 #C The player is viewing a recipe for Grandpa's Muffin on a corkboard in a bakery simulator game.
+0:06 #C The player is in a virtual bakery, using a mixing machine to prepare Grandpa's Muffins.
+0:07 #C The player is preparing to make Grandpa's Muffin in a first-person baking simulator game, gathering ingredients from a shelf.
+0:08 #C The player is in a first-person baking game, preparing to add ingredients to a bowl for Grandpa's Muffin recipe.
+0:09 #C The player is reviewing a list of ingredients and their costs before purchasing them in a game.
+0:10 #C The player is in a virtual bakery game, preparing to make Grandpa's Muffin by adding ingredients to a mixing bowl.
+0:11 #C The player is in a bakery simulation game, preparing to bake Grandpa's Muffin by adding ingredients to a mixing bowl.
+0:12 #C The player is preparing to make Grandpa's Muffins in a first-person cooking game, gathering ingredients such as eggs and butter.
+0:13 #C The player is mixing ingredients in a bowl to bake Grandpa's Muffin in a first-person cooking simulation game.
+0:14 #C The player is in a virtual kitchen preparing to bake Grandpa's Muffins, and is currently adding eggs to the mixing bowl.
+0:15 #C The player is adding pumpkin seeds to a mixing bowl while following a recipe for Grandpa's Muffin in a cooking simulation game.
+0:16 #C The player is in a first-person cooking game, appearing to be discarding excess batter into a trash can while making Grandpa's Muffin.
+0:17 #C The player is in a first-person cooking game, preparing to make Grandpa's Muffin, and is currently adding eggs to a mixing bowl.
+0:18 #C The player is in a baking game, adding eggs to a mixing bowl to make Grandpa's Muffins.
+0:19 #C The player is in a first-person baking game, preparing to add eggs to a muffin batter.
+0:20 #C The player is in a first-person baking game, preparing to add eggs to a bowl of muffin batter according to a recipe for Grandpa's Muffins.
+0:21 #C The player is in a first-person cooking game, preparing to bake Grandpa's Muffins, and is adding ingredients to a mixing bowl.
+0:22 #C The player is in a virtual kitchen, apparently making Grandpa's Muffin in a cooking game, and is currently adding ingredients to a mixing bowl.
+0:23 #C The player is in a first-person baking game, adding yeast to a large bowl to prepare Grandpa's Muffin recipe.
+0:24 #C The player is adding yeast to a large bowl to bake Grandpa's Muffins in a virtual bakery simulation.
+0:25 #C The player is in a first-person baking game, adding milk to a bowl of ingredients to make Grandpa's Muffin.
+0:26 #C The player is in a first-person baking game, preparing to add milk to a bowl of muffin batter.
+0:27 #C The player is preparing to bake Grandpa's Muffins in a first-person baking simulation game, gathering ingredients such as water, milk, and oil.
+0:28 #C The player is in a first-person baking game, adding ingredients to a mixing bowl to prepare Grandpa's Muffin.
+0:29 #C A first-person player is in the process of making Grandpa's Muffin in a virtual bakery game, adding olive oil to a mixing bowl.
+0:30 #C The player is in a first-person baking game, adding sugar to a bowl of muffin batter.
+0:31 #C The player is mixing ingredients in a large bowl to bake Grandpa's Muffin in a first-person baking simulation game.
+0:32 #C A player in a baking simulation game is adding spelt flour to a mixing bowl to make Grandpa's Muffins.
+0:33 #C A player in a baking simulation game is adding milk to a bowl of batter while following a recipe for Grandpa's Muffin.
+0:34 #C The player is in a virtual bakery game, adding milk to a bowl of ingredients to bake Grandpa's Muffin.
+0:35 #C The player is in a virtual bakery game, adding milk to a bowl of ingredients to bake Grandpa's Muffin.
+0:36 #C The player is in a virtual bakery game, adding milk to a mixing bowl to prepare Grandpa's Muffin.
+0:37 #C The player is using a virtual kitchen interface in a game to mix ingredients for Grandpa's Muffin.
+0:38 #C The player is using a medium mixer to combine ingredients for Grandpa's Muffin in a bakery simulation game.
+0:39 #C The player is using a medium mixer to combine ingredients for Grandpa's Muffins in a bakery simulation game.
+0:40 #C The player is preparing to bake Grandpa's Muffin in a first-person baking simulation game.
+0:41 #C The player is preparing to bake Grandpa's Muffins in a virtual bakery simulation, pouring batter into muffin tins.
+0:42 #C The player is preparing muffin batter in three different muffin tins in a virtual bakery simulation.
+0:43 #C The player is preparing to bake Grandpa's Muffins in a first-person baking simulator game.
+0:44 #C The player is preparing to bake Grandpa's Muffins in a virtual bakery game, arranging muffin batter into empty muffin tins.
+0:45 #C The player is preparing to bake Grandpa's Muffins in a first-person baking simulator game, as evidenced by the muffin tins and recipe displayed on screen.
+0:46 #C The player is using a medium mixer in a bakery simulation game to mix the ingredients for Grandpa's Muffin.
+0:47 #C The player is mixing the ingredients for Grandpa's Muffin in a large bowl in a virtual bakery game.
+0:48 #C The player is mixing ingredients in a large bowl to make Grandpa's Muffin in a virtual bakery.
+0:49 #C The player is in a virtual bakery mixing ingredients in a bowl to make Grandpa's Muffins.
+0:50 #C A player in a cooking game is mixing ingredients in a bowl to make Grandpa's Muffin.
+0:51 #C The player is mixing ingredients in a bowl to make Grandpa's Muffins in a virtual bakery simulation game.
+0:52 #C The player is preparing to bake Grandpa's Muffins in a first-person baking simulation game, adding ingredients to a mixing bowl.
+0:53 #C The player is in a virtual bakery game, pouring a yellow liquid into a bowl to make Grandpa's Muffin.
+0:54 #C The player is placing muffin batter into an oven tray in a virtual bakery game.
+0:55 #C The player is placing freshly baked muffins onto an oven tray in a first-person bakery simulation game.
+0:56 #C The player is in a first-person bakery game, seemingly preparing to bake Grandpa's Muffins, based on the recipe shown.
+0:57 #C The player is preparing to bake Grandpa's Muffins in a virtual bakery simulation game, portioning ingredients into muffin tins.
+0:58 #C The player is preparing to bake Grandpa's Muffins in a virtual bakery game, pouring batter into muffin tins.
+0:59 #C The player is preparing to bake Grandpa's Muffins in a virtual bakery by filling muffin tins with batter.
+1:00 #C The player is baking Grandpa's Muffins in a bakery simulator game.
+1:01 #C The player is monitoring a large batch of Grandpa's Muffins baking in an old oven in a bakery simulation game.
+1:02 #C The player is monitoring a large batch of Grandpa's Muffins baking in an old oven in a bakery simulation game.
+1:03 #C The player is in a first-person baking game, pouring muffin batter into a muffin tin.
+1:04 #C The player is in the process of baking Grandpa's Muffins in a first-person bakery simulation game.
+1:05 #C The player is mixing ingredients in a bowl to make Grandpa's Muffin in a virtual bakery game.
+1:06 #C The player is mixing ingredients in a bowl in a virtual bakery to make Grandpa's Muffins in a cooking simulation game.
+1:07 #C The player is in a first-person baking game, adding ingredients to a bowl to make Grandpa's Muffin.
+1:08 #C The player is mixing ingredients in a bowl to make Grandpa's Muffin in a first-person baking simulator game.
+1:09 #C The player is preparing to bake Grandpa's Muffins in a first-person baking simulator game, placing muffin batter into muffin tins.
+1:10 #C The player is in a virtual bakery preparing to bake Grandpa's Muffins, as shown by the in-game recipe and timer.
+1:11 #C The player is apparently in a cooking game, rapidly spreading muffin batter across an oven tray.
+1:12 #C The player is in a virtual bakery, apparently making Grandpa's Muffins, as indicated by an in-game recipe displayed on screen.
+1:13 #C The player in a bakery simulation game is about to purchase muffin tins to bake Grandpa's Muffins, but is currently 42 cents short.
+1:14 #C The player in a bakery simulation game is about to purchase a muffin form, but is slightly short on funds.
+1:15 #C The player is in a virtual bakery, viewing the recipe for Grandpa's Muffin while preparing to bake it.
+1:16 #C The player is monitoring several batches of Grandpa's Muffins burning in an old oven in a baking simulation game.
+1:17 #C The player is monitoring a batch of Grandpa's Muffins baking in an old oven, several of which are burning.
+1:18 #C The player is about to bake Grandpa's Muffin in a first-person baking simulator game.
+1:19 #C The player is placing muffin batter into a muffin tin in a virtual bakery simulation game.
+1:20 #C The player is in a first-person cooking game, looking at a blue surface where they are about to place ingredients to make Grandpa's Muffin.
+1:21 #C The player is at a bakery in a game and must choose to either stay or move to the city.
+1:22 #C The player is arranging freshly baked bread in a basket in a bakery simulator game.
+1:23 #C The player is in a bakery simulator game, viewing a variety of freshly baked bread and pastries in a wicker basket, with a recipe and a knife block visible nearby.
+1:24 #C The player is in a bakery simulator game, viewing their workspace and considering upgrading their equipment.
+1:25 #C The player is driving an orange van down a city street at night.
+1:26 #C The player is driving an orange van down a city street at night.
+1:27 #C The player is driving a red van at night through a city in a first-person driving game.
+1:28 #C The player is driving a red van down a city street at night.
+1:29 #C The player is driving a red van at night down a city street.
+1:30 #C The player is driving a van at night through a city street, navigating a crosswalk.
+1:31 #C The player is driving a red van at night along a city road, heading toward Uptown Bridge.
+1:32 #C The player is driving an orange van at night down a city street, approaching a green traffic light.
+1:33 #C The player is viewing a summary screen in a bakery simulation game, showing their reputation, level, daily rewards, and the status of their deliveries to different customers.
+1:34 #C The player is viewing an exterior overhead shot of their bakery, "Grandma's Great Bread," at night in a video game.
+1:35 #C The player is viewing a tutorial message in the game *Bakery Simulator* while standing outside the Corner Bakery at night.
+1:36 #C The image is completely black, so there is nothing to describe.
+1:37 #C The image is completely black, indicating the player is experiencing a loading screen or a cutscene in complete darkness.
+1:38 #C The image is completely black, indicating the player is experiencing a loading screen or a cutscene.
+1:39 #C The player is navigating a room that appears to be a butcher shop or food preparation area in a first-person video game.
+1:40 #C The player is reviewing the cost of upgrading their workshop to the "Ultimate Workshop" tier in a game.
+1:41 #C The player is reviewing the details and cost of upgrading their workshop to the "Ultimate Workshop" in a video game.
+1:42 #C The player is deciding whether to purchase an upgrade to their workshop for 5,000 in-game currency, which will provide more space and access to specialized machines.
+1:43 #C The player is standing in a simple room, looking at a small, lit fire in a built-in oven.
+1:44 #C The player is viewing a menu showing available bakery items and their rewards, alongside a map of Bohemia Boulevards indicating their current location and nearby objectives.
+1:45 #C The player is in a bakery kitchen, apparently preparing to make a surprise muffin, as indicated by the recipe displayed on the screen.
+1:46 #C The player is in a virtual kitchen preparing to make a surprise muffin in a first-person cooking game.
+1:47 #C The player is adding 500 grams of wheat flour to a mixing bowl while making a surprise muffin in a first-person baking game.
+1:48 #C The player is in a first-person cooking game, adding two big eggs to a mixing bowl while making a surprise muffin.
+1:49 #C The player is in a first-person cooking game, preparing to add ingredients to a mixing bowl to make a surprise muffin.
+1:50 #C The player is in a kitchen in a first-person game, preparing a surprise muffin by adding eggs to a mixing bowl.
+1:51 #C The player is in a first-person game, apparently in a kitchen, adding small eggs to a mixture for a surprise muffin.
+1:52 #C A player in a cooking game is mixing ingredients in a bowl to make a surprise muffin.
+1:53 #C The player is in a first-person cooking game, adding eggs to a muffin batter in a mixing bowl.
+1:54 #C The player is in a first-person cooking game, adding butter to a mixing bowl to prepare a surprise muffin.
+1:55 #C The player in a cooking game is adding eight big eggs to a bowl of batter while making a surprise muffin.
+1:56 #C The player is adding ingredients to a mixture in a rusty bowl, seemingly in the process of baking a surprise muffin in a first-person cooking game.
+1:57 #C The player is in a first-person cooking game, adding six big eggs to a rusty metal bowl while following a recipe for a surprise muffin.
+1:58 #C The player is in a first-person cooking game, preparing to add yeast to a bowl of ingredients for a surprise muffin recipe.
+1:59 #C The player is in a first-person baking game, adding yeast to a bowl to make a surprise muffin.
+2:00 #C The player is in a first-person cooking game, adding 200 ml of olive oil to a mixing bowl while following a recipe for surprise muffins.
+2:01 #C The player is in a first-person baking game, preparing to make a surprise muffin by adding ingredients to a large mixing bowl.
+2:02 #C The player is in a baking game, adding milk to a bowl of ingredients to make a surprise muffin.
+2:03 #C The player is adding milk to a mixing bowl in a baking simulator game to make a surprise muffin.
+2:04 #C The player is in a first-person baking game, adding milk to a bowl of ingredients to make a surprise muffin.
+2:05 #C A first-person player is adding 500 grams of wheat flour to a mixing bowl to bake a surprise muffin in a virtual bakery.
+2:06 #C The player is reviewing a list of ingredients and their costs before purchasing them in a baking-related video game.
+2:07 #C The player is reviewing a shopping list and about to purchase ingredients in a baking game.
+2:08 #C The player is in a first-person baking game, adding wheat flour to a mixing bowl to make a surprise muffin.
+2:09 #C The player is making a surprise muffin in a first-person baking game, adding wheat flour to a mixing bowl.
+2:10 #C The player is in a first-person baking game, adding wheat flour to a large mixing bowl to make a surprise muffin.
+2:11 #C A player in a first-person baking game is adding sugar to a large mixing bowl while following a recipe for surprise muffins.
+2:12 #C The player is in a first-person baking game, adding white sugar to a mixing bowl to make a surprise muffin.
+2:13 #C A first-person player is in a virtual kitchen, mixing ingredients in a large bowl to bake a surprise muffin.
+2:14 #C The player is adding raisins to a large bowl of muffin batter in a first-person baking game.
+2:15 #C The player is using a virtual interface to add ingredients to a bowl of flour in a first-person cooking game.
+2:16 #C The player is using a medium mixer to combine ingredients for a surprise muffin in a first-person baking game.
+2:17 #C The player is preparing to bake surprise muffins in a first-person baking simulation game.
+2:18 #C The player is preparing to bake surprise muffins in a first-person cooking game, placing empty muffin tins on a wooden counter.
+2:19 #C The player is preparing to bake surprise muffins in a first-person baking game, having already poured batter into muffin tins.
+2:20 #C The player is preparing to bake surprise muffins in a first-person cooking game, filling muffin tins with batter.
+2:21 #C The player is in a virtual kitchen in a game, viewing the recipe for a surprise muffin.
+2:22 #C The player is using a medium mixer to prepare a surprise muffin in a cooking game.
+2:23 #C The player is in a virtual kitchen, mixing ingredients in a bowl to make a surprise muffin.
+2:24 #C The player is in a first-person cooking game, mixing ingredients in a bowl to make a surprise muffin.
+2:25 #C The player is mixing ingredients in a bowl to make a surprise muffin in a first-person cooking game.
+2:26 #C The player is mixing ingredients in a bowl to make a surprise muffin in a first-person cooking game.
+2:27 #C The player is mixing ingredients in a large bowl to make a surprise muffin in a virtual cooking game.
+2:28 #C The player in a first-person cooking game is preparing to bake a surprise muffin, holding an oven tray.
+2:29 #C The player in the first-person game is preparing to bake a batch of surprise muffins in a commercial kitchen.
+2:30 #C The player is in a baking game, setting the temperature and timer on a rack oven to bake a surprise muffin.
+2:31 #C The player is in a kitchen in a first-person game, apparently preparing to bake a surprise muffin, as indicated by the in-game recipe displayed.
+2:32 #C The player is preparing to bake surprise muffins in a first-person cooking game, placing muffin batter into empty muffin tins.
+2:33 #C The player is preparing muffin batter in multiple muffin tins in a baking simulation game.
+2:34 #C The player in a first-person cooking game is preparing to bake surprise muffins, arranging muffin batter in tins.
+2:35 #C The player is preparing to bake surprise muffins in a first-person cooking game, shown by filling muffin tins with batter.
+2:36 #C The player is mixing the ingredients for a surprise muffin in a large bowl in a first-person cooking game.
+2:37 #C The player is mixing ingredients in a bowl to make a surprise muffin in a first-person baking game.
+2:38 #C The player is mixing ingredients in a bowl to make a surprise muffin in a first-person cooking game.
+2:39 #C The player is using a virtual interface to prepare a surprise muffin in a cooking game.
+2:40 #C The player is preparing to bake a batch of surprise muffins in a first-person baking game.
+2:41 #C The player is standing in a kitchen-like area of a game, looking at an empty, possibly refrigerator-like, storage unit while a recipe for a surprise muffin is displayed on the screen.
+2:42 #C The player is preparing to bake surprise muffins in a first-person cooking game, shown by the muffin tin and recipe on-screen.
+2:43 #C The player is preparing to bake surprise muffins in a first-person cooking game, pouring batter into muffin tins.
+2:44 #C The player is preparing to bake surprise muffins in a first-person cooking game.
+2:45 #C The player is preparing to bake surprise muffins in a first-person baking game, shown by the batter in muffin tins.
+2:46 #C The player is mixing ingredients in a bowl to make a surprise muffin in a first-person baking game.
+2:47 #C The player is preparing to bake surprise muffins in a first-person cooking game, as evidenced by the muffin recipe and filled muffin tins.
+2:48 #C The player is placing a tray of surprise muffins onto a conveyor belt in a bakery simulator game.
+2:49 #C The player is checking on a batch of surprise muffins baking in a rack oven in a bakery simulation game.
+2:50 #C The player is baking surprise muffins in a rack oven, monitoring the temperature and bake time.
+2:51 #C The player is checking on a batch of surprise muffins baking in an industrial oven.
+2:52 #C The player is checking on surprise muffins baking in an oven.
+2:53 #C The player is monitoring the baking of surprise muffins in a commercial oven.
+2:54 #C The player is checking on a batch of surprise muffins baking in an industrial oven.
+2:55 #C The player is monitoring the baking of a surprise muffin in an industrial oven.
+2:56 #C The player is monitoring the baking of surprise muffins in an industrial oven.
+2:57 #C The player is checking on a surprise muffin baking in an oven in a first-person cooking game.
+2:58 #C The player is preparing a tray of freshly baked chocolate chip muffins in a bakery.
+2:59 #C The player in a baking simulation game is preparing to place a tray of freshly baked surprise muffins into a crate.
+3:00 #C The player is in a game, looking at a rack of baked goods in a Ginger House, possibly retrieving a Surprise Muffin.
+3:01 #C The player is in a first-person baking game, placing freshly baked surprise muffins into a crate to fulfill an order for the Ginger House.
+3:02 #C The player in a first-person cooking game is placing muffin batter into an oven tray to bake surprise muffins.
+3:03 #C The player is navigating a narrow passageway in a first-person game, possibly while searching for ingredients based on the recipe shown on the screen.
+3:04 #C The player is in a virtual kitchen, placing a surprise muffin batter into an oven tray.
+3:05 #C The player is standing in a dimly lit hallway, looking at a dark wooden double door.
+3:06 #C The player is outside their corner bakery at night, presented with a prompt to upgrade their machinery using the TAB key.
+3:07 #C The player is driving a rusty orange van through a city at night.
+3:08 #C The player is driving a red van down a city street at night.
+3:09 #C The player is driving a red van down a city street at night.
+3:10 #C The player is driving a red van down a city street at night.
+3:11 #C The player is driving a red van at night through a city intersection toward Uptown Bridge.
+3:12 #C The player is driving a red van at night down a city street, heading towards the Uptown Bridge.
+3:13 #C The player is driving an orange van at night through a city street, approaching a crosswalk.
+3:14 #C The player is driving a red van down a city street at night, possibly pursuing or being pursued by another vehicle.
+3:15 #C The player is driving a red van at night down a snow-covered city street.
+3:16 #C The player is driving a van down a city street at night in a first-person driving game.
+3:17 #C The player is driving a rusty orange van through a city at night.
+3:18 #C The player is driving a beat-up orange van backward in a city street, seemingly preparing to park.
+3:19 #C The player is driving a red van down a city street at night.
+3:20 #C The player is driving a red van down a city street at night.
+3:21 #C The player is driving a red van down a city street at night.
+3:22 #C The player is driving a van slowly down a street at night, approaching a glowing green area in the road.
+3:23 #C The player is reviewing their in-game bakery progress, which shows their reputation, level, rewards, and orders from various customers.
+3:24 #C The player is viewing a summary screen in a baking simulation game, showing their current baker level, reputation, and today's rewards.
+3:25 #C The player is viewing an exterior nighttime shot of their bakery, "Corner Bakery," in the game *Bakery Simulator*.
+3:26 #C The player is experiencing a completely black screen, possibly indicating a game bug or loading screen.
+3:27 #C The player is standing in a large, industrial kitchen in a first-person game, likely preparing to cook or bake something.
+3:28 #C The player is viewing an in-game economy menu, showing their current economic standing within a blurred-out workshop environment.
+3:29 #C The player is deciding whether to proceed to a new day in a game, prompted by a message on an in-game ordering board.
+3:30 #C The player is reviewing a list of available quests and their rewards on an in-game map of Industrial Valley.
+3:31 #C The player is reviewing delivery options on a map within a game, choosing between several bakeries and their respective rewards.
+3:32 #C The player is reviewing delivery options on a map in a delivery-based game.
+3:33 #C The player is reviewing rewards and locations on a map before confirming their next objective in a delivery-based game.
+3:34 #C The player is viewing an in-game menu showing available bakery delivery options and a map of the game's world.
+3:35 #C The player is viewing a menu showing available delivery orders and their rewards on a map of the game world.
+3:36 #C The player is reviewing a list of locations and their rewards before selecting a destination on a map in a game.
+3:37 #C The player is in a bakery kitchen, looking at the recipe for a Folksy Loaf while seemingly preparing to bake it.
+3:38 #C The player is in a first-person baking game, adding water to a mixing bowl as part of making a Folksy Loaf.
+3:39 #C The player is reviewing an order of baking ingredients in a game, with a balance of 2,603.58 in-game currency available to purchase them.
+3:40 #C The player is reviewing a list of ingredients and their costs before purchasing them in a baking-related game.
+3:41 #C The player is reviewing an order of baking ingredients totaling 116.14 currency units before purchasing them in a first-person game.
+3:42 #C The player is in a first-person baking game, adding rye flour to a mixing bowl to make a Folksy Loaf.
+3:43 #C A player in a first-person baking game is adding rye flour to a mixing bowl to make a folksy loaf.
+3:44 #C The player is reviewing a shopping list of baking ingredients and is about to purchase them in a video game.
+3:45 #C The player is in a virtual bakery, preparing to make a Folksy Loaf by adding ingredients to a sourdough starter in a large mixing bowl.
+3:46 #C The player is adding wheat flour to a bowl of dough in a virtual baking game.
+3:47 #C A player in a first-person baking simulator game is preparing to add wheat flour to a bowl of dough while following a recipe for a Folksy Loaf.
+3:48 #C The player is in a first-person baking game, adding ingredients to a bowl of dough to make a folksy loaf.
+3:49 #C The player is adding wheat flour to a large bowl of dough in a first-person baking game.
+3:50 #C The player is adding wheat flour to a bowl of dough in a virtual bakery to bake a Folksy Loaf.
+3:51 #C The player is in a virtual kitchen, adding sunflower seeds to a bowl of dough to bake a folksy loaf.
+3:52 #C The player is mixing ingredients in a large bowl to bake a Folksy Loaf in a virtual baking game.
+3:53 #C The player is in a baking simulator game, adding water to a bowl of dough to make a Folksy Loaf.
+3:54 #C The player is in a virtual bakery, adding water to a large bowl of ingredients to bake a folksy loaf.
+3:55 #C The player is mixing ingredients in a large bowl to bake a Folksy Loaf in a virtual baking game.
+3:56 #C The player is using a mixing machine to make a Folksy Loaf in a bakery simulator game.
+3:57 #C The player is using a medium mixer to prepare a Folksy Loaf in a first-person baking game.
+3:58 #C The player is in a bakery game, about to purchase bread forms to bake Folksy Loaves.
+3:59 #C The player is in a bakery in a first-person game, examining a machine and its recipe for making Folksy Loaves.
+4:00 #C The player is using a medium mixer to prepare a Folksy Loaf in a video game.
+4:01 #C The player is mixing ingredients in a bowl to bake a Folksy Loaf in a first-person cooking game.
+4:02 #C The player is mixing ingredients in a large bowl to make a Folksy Loaf in a virtual baking game.
+4:03 #C A player in a first-person cooking game is adding orange peel to a bread dough mixture while following a recipe for a Folksy Loaf.
+4:04 #C The player is mixing ingredients in a bowl to make a Folksy Loaf in a first-person cooking game.
+4:05 #C The player is mixing ingredients in a large bowl to make a Folksy Loaf in a virtual bakery.
+4:06 #C The player is mixing ingredients in a large bowl to make a Folksy Loaf in a virtual baking game.
+4:07 #C The player is mixing ingredients in a bowl to make a folksy loaf in a first-person baking game.
+4:08 #C The player is in a virtual kitchen, viewing the recipe for a Folksy Loaf in a first-person baking game.
+4:09 #C The player is in a first-person baking game, apparently preparing to bake a Folksy Loaf in an oven.
+4:10 #C The player is in a first-person perspective game, viewing a recipe for a "Folksy Loaf" while in the Ginger House.
+4:11 #C The player is in a bakery, preparing to bake a Folksy Loaf using a recipe displayed on the screen.
+4:12 #C The player is looking at a recipe for a Folksy Loaf in a first-person cooking game.
+4:13 #C The player in the first-person game is inspecting a recipe for a Folksy Loaf while standing near a metal cart.
+4:14 #C The player is viewing a recipe for a Folksy Loaf in a first-person cooking game.
+4:15 #C The player is in a first-person game, reviewing the recipe for a Folksy Loaf while standing next to a shelving unit.
+4:16 #C The player is seemingly inside a building, viewing a recipe for a "Folksly Loaf" in a first-person game.
+4:17 #C The player is interacting with a game interface to view the recipe for a folksy loaf while standing near a metal cart in a kitchen.
+4:18 #C The player is in a video game kitchen, viewing a recipe for a "Folksly Loaf" and appears to be preparing to bake it.
+4:19 #C The player is viewing the recipe for a Folksy Loaf in a first-person cooking game, apparently preparing to bake it.
+4:20 #C The player is baking ten Folksy Loaves in an oven in a first-person cooking game.
+4:21 #C The player is in a virtual kitchen preparing to bake a "Folksy Loaf" in a first-person cooking game.
+4:22 #C The player is preparing to bake a Folksy Loaf in a first-person cooking game, having already gathered the necessary ingredients.
+4:23 #C The player is mixing ingredients in a bowl to make a Folksy Loaf in a first-person cooking game.
+4:24 #C The player is preparing to bake a Folksy Loaf in a virtual baking game, placing the ingredients on a table.
+4:25 #C The player is in a first-person game, viewing a recipe for a "Folksly Loaf" in a virtual kitchen.
+4:26 #C The player is in a first-person cooking game, placing a loaf of bread onto an oven tray to bake it.
+4:27 #C The player is preparing to bake a Folksy Loaf in a first-person cooking game, arranging ingredients in containers on a counter.
+4:28 #C The player is navigating a first-person game, apparently in a kitchen setting, while viewing a recipe for a "Folksy Loaf" in a game's in-game menu.
+4:29 #C The player is interacting with an in-game oven, checking the cooking time of several Folksy Loaves.
+4:30 #C The player is monitoring three loaves of Folksy Loaf baking in an oven in a first-person cooking game.
+4:31 #C The player is baking three loaves of Folksy Loaf in a first-person cooking game.
+4:32 #C The player is preparing to bake three Folksy Loaves in a bakery oven in a first-person cooking game.
+4:33 #C The player is mixing ingredients to bake a Folksy Loaf in a first-person cooking game.
+4:34 #C The player is in a game's kitchen, viewing a recipe for a Folksy Loaf and appears to be about to bake it.
+4:35 #C The player is about to take three freshly baked Folksy Loaves out of an old oven in a first-person baking game.
+4:36 #C The player is about to remove several freshly baked Folksy Loaves from an old oven in a first-person baking game.
+4:37 #C The player is about to remove four freshly baked Folksy Loaves from an old oven in a first-person cooking game.
+4:38 #C The player is removing several freshly baked Folksy Loaves from an old oven in a first-person baking game.
+4:39 #C The player is about to remove three freshly baked Folksy Loaves from an old oven in a first-person cooking game.
+4:40 #C The player is checking on four loaves of Folksy Loaf baking in an old oven in a first-person cooking game.
+4:41 #C The player is in a first-person cooking game, about to remove three freshly baked Folksy Loaves from an old oven.
+4:42 #C The player is in a first-person cooking game, checking the temperature gauge of an old oven while preparing to bake a Folksy Loaf.
+4:43 #C The player is viewing the status of three Folksy Loaves baking in an old oven in a first-person game.
+4:44 #C The player is in a first-person cooking game, looking at a bread loaf recipe and an old oven with a baked loaf inside.
+4:45 #C The player is removing a freshly baked loaf of bread from an oven in a cooking simulation game.
+4:46 #C The player is in a first-person game, seemingly in a kitchen or cooking area, and is interacting with a game interface showing the recipe and ingredients for a "folksy loaf" they are about to make.
+4:47 #C The player is deciding whether to stay, call for delivery, or move to the city after completing an order of ten Folksy Loaves for the Ginger House.
+4:48 #C The player is at a menu screen in a game, deciding whether to stay at the Ginger House, call for delivery, or move to the city.
+4:49 #C The player is confirming a delivery with a total cost of 89.85, resulting in a new balance of 2,240.38.
+4:50 #C The player is confirming a delivery cost of 89.85, including a tip, resulting in a new balance of 2,240.38.
+4:51 #C The player is about to view reports from a delivery company.
+4:52 #C The player is confirming a delivery to the Ginger House in a delivery-based video game.
+4:53 #C The player is viewing their in-game stats and rewards in a bakery simulation game.
+4:54 #C The player is viewing a loading screen for the game *Bakery Simulator*, which shows the exterior of a bakery at night with a tutorial message at the bottom.
+4:55 #C The player is navigating a building, using a holographic map to find their way.
+4:56 #C The player is reviewing a list of locations and rewards in a game, consulting a map of Blooming Plains to plan their next move.
+4:57 #C The player is viewing a game menu showing available locations and rewards on a map of Bohemia Boulevards.
+4:58 #C The player is reviewing delivery options and rewards on a map in a delivery-based game.
+4:59 #C The player is preparing ingredients in a bakery, possibly for making bread or pastries.
+5:00 #C The player is standing in a tiled room, possibly a bakery, looking at a blue mat in front of a pizza oven and a corkboard.
+5:01 #C The player is navigating a brightly lit room with multiple workbenches and trays, possibly within a crafting or production-based game.
+5:02 #C The player is reviewing the purchase options for an "Ultimate Workshop" upgrade in a game, which will provide more space and specialized machines for the next in-game day.
+5:03 #C The player is standing in a room with a large oven and is interacting with a small, glowing object on the floor in front of it.
+5:04 #C The player is reviewing a list of nearby bakeries and their rewards in a video game, using an in-game map to locate them.
+5:05 #C The player is interacting with a flour dispensing machine in a game, likely in a food production or bakery setting.
+5:06 #C The player is navigating a large industrial kitchen, likely preparing for or in the midst of a cooking-based task.
+5:07 #C The player is reviewing a list of nearby bakeries and their rewards on a in-game map before deciding which one to visit.
+5:08 #C The player is navigating a bakery in a first-person game, apparently preparing to make cornbread.
+5:09 #C The player is using a mixing bowl to prepare ingredients for cornbread in a virtual bakery simulation game.
+5:10 #C The player is in a first-person baking game, preparing to make cornbread by gathering ingredients in a large mixing bowl.
+5:11 #C The player is in a virtual bakery game, adding corn flour to a mixing bowl to bake cornbread.
+5:12 #C The player is in a virtual bakery adding corn flour to a mixing bowl to make cornbread.
+5:13 #C The player is reviewing a list of ingredients and their costs before purchasing them in a baking game.
+5:14 #C The player is in a bakery simulation game, adding corn flour to a large bowl to bake cornbread.
+5:15 #C The player is in a virtual bakery game, adding water to a bowl to make cornbread.
+5:16 #C A first-person player is preparing to bake cornbread in a virtual bakery, adding milk to a mixing bowl according to a recipe displayed on the screen.
+5:17 #C The player is in a first-person bakery simulation game, adding milk to a bowl of batter to make cornbread.
+5:18 #C The player is in a first-person baking game, adding salt to a bowl of ingredients while following a recipe for cornbread.
+5:19 #C The player is in a first-person baking simulator game, adding salt to a bowl of ingredients to make cornbread.
+5:20 #C The player is in a virtual bakery game, adding yeast to a bowl of batter to bake cornbread.
+5:21 #C The player is in a virtual bakery game, adding ingredients to a bowl of dough to bake cornbread according to an on-screen recipe.
+5:22 #C The player is in a virtual bakery, using a digital recipe to mix ingredients in a large bowl to make cornbread.
+5:23 #C The player is using a virtual kitchen appliance in a bakery simulation game to mix ingredients for cornbread.
+5:24 #C The player is in a bakery simulation game, about to start mixing ingredients for cornbread in a medium mixer.
+5:25 #C The player is about to start mixing ingredients for cornbread in a medium mixer in a virtual bakery game.
+5:26 #C The player is using a medium mixer to make cornbread in a virtual bakery simulation game.
+5:27 #C The player is about to start mixing the ingredients for cornbread in a medium mixer in a virtual bakery.
+5:28 #C The player is using a medium mixer in a virtual bakery to mix the ingredients for cornbread.
+5:29 #C The player is monitoring a medium mixer currently mixing cornbread batter in a bakery simulation game.
+5:30 #C The player is in a first-person cooking game, apparently preparing cornbread, and is currently adding ingredients to a bowl.
+5:31 #C The player is preparing to shape a ball of dough on a forming board to make cornbread in a baking simulation game.
+5:32 #C The player in a bakery simulation game is preparing cornbread dough, shaping it on a wooden board before placing it in a baking pan.
+5:33 #C The player is shaping dough on a wooden board in a bakery simulation game, preparing to make cornbread.
+5:34 #C The player is preparing cornbread in a bakery simulation game, shaping dough on a wooden board and placing formed dough pieces into a tray.
+5:35 #C The player is in a bakery game, using a virtual hand to place dough rounds onto a wooden surface to make cornbread.
+5:36 #C The player is shaping cornbread dough on a wooden surface in a bakery simulation game.
+5:37 #C The player is kneading dough on a wooden surface in a virtual bakery.
+5:38 #C The player is kneading dough in a bakery simulator game.
+5:39 #C The player is in a bakery game, placing dough balls onto a wooden surface to make cornbread.
+5:40 #C The player is kneading dough on a wooden surface in a bakery simulation game.
+5:41 #C The player is kneading dough in a bakery simulation game, preparing to make cornbread.
+5:42 #C The player is kneading dough on a wooden surface in a bakery simulation game.
+5:43 #C The player is shaping dough on a wooden surface in a bakery simulation game.
+5:44 #C The player is preparing to make cornbread in a bakery simulation game, placing dough into a designated area on a wooden board.
+5:45 #C The player is shaping a piece of dough on a wooden surface in a bakery simulation game.
+5:46 #C The player is preparing dough for cornbread in a bakery simulation game.
+5:47 #C The player is preparing to make cornbread in a bakery simulation game, placing dough on a wooden surface.

@@ -47,16 +47,19 @@ from ray.rllib.utils.typing import AlgorithmConfigDict, ResultDict
 from ray.tune.schedulers import PopulationBasedTraining, pb2
 args = get_args()
 
+
+import json
 import torch
 import torch.nn as nn
 import torchvision.models as models
 import torchvision.transforms as transforms
 import clip
 from PIL import Image
-from sentence_transformers import SentenceTransformer
+
 from sklearn.metrics.pairwise import cosine_similarity
 
 from description import desc_dict
+
 
 def pick_config_env(str_env):
     # modify atari_config to incorporate the environments
@@ -67,7 +70,7 @@ def pick_config_env(str_env):
     elif args.env_name == 'beogym':
         use_config = configs.beogym_config
         use_env = envs.beogym[str_env]
-    elif args.env_name == 'carla':
+    elif env_name == 'carla':
         use_config = configs.carla
         use_env = envs.carla[str_env]
     return use_config, use_env
@@ -75,75 +78,16 @@ def pick_config_env(str_env):
 def random_encoder(output_dim, input_shape):
     return np.random.rand(input_shape[0], output_dim)
 
-def get_image_embedding(observation):
-    if not isinstance(observation, np.ndarray):
-        raise ValueError("Observation must be a numpy.ndarray")
-
-    if observation.dtype != np.uint8:
-        print('change type')
-        observation = observation.astype(np.float32)
-    
-    if observation.max() > 1.0:
-        print('max > 1')
-        observation = observation / 255.0
-
-    model = models.resnet50(pretrained=True)
-    model = nn.Sequential(*list(model.children())[:-1])
-    model.eval()
-
-    # preprocess = transforms.Compose([
-    #     transforms.Resize(256),
-    #     transforms.CenterCrop(224),
-    #     transforms.ToTensor(),
-    #     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    # ])
-    
-    # if len(observation.shape) == 3:
-    #     preprocess = transforms.Compose([
-    #         transforms.Resize(256),
-    #         transforms.CenterCrop(224),
-    #         transforms.ToTensor(),
-    #         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    #     ])
-    #     input_tensor = preprocess(torch.tensor(observation).permute(2, 0, 1).float())
-
-    # # ram or grayscale
-    # elif len(observation.shape) == 2:
-    #     observation = np.stack([observation] * 3, axis=-1)
-    #     preprocess = transforms.Compose([
-    #         transforms.Resize(256),
-    #         transforms.CenterCrop(224),
-    #         transforms.ToTensor(),
-    #         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    #     ])
-    #     input_tensor = preprocess(torch.tensor(observation).permute(2, 0, 1).float())
-
-    # else:
-    #     raise ValueError("Unsupported observation format!")
-
-    input_tensor = torch.tensor(observation).permute(2, 0, 1).float()
-
-    normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    input_tensor = normalize(input_tensor)
-
-    input_tensor = input_tensor.unsqueeze(0)
-
-    with torch.no_grad():
-        output = model(input_tensor)
-
-    return output.flatten().numpy()
-
-def get_text_embedding(text):
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-
-    embedding = model.encode(text)
-
-    return embedding
 
 mar_dict = {}
 min_rewards_dict = {}
 max_rewards_dict = {}
 embedding_dict = {}
+with open("embedding_dict.json", "r") as f:
+    embedding_dict_loaded = json.load(f)
+
+embedding_dict = {eval(k): v for k, v in embedding_dict_loaded.items()}
+
 def get_embeddings_from_env(config):
     env = gym.make(config['env_config']['env'])
     
@@ -151,8 +95,6 @@ def get_embeddings_from_env(config):
 
     print(type(observation), observation.shape)
 
-    # image_embedding = get_image_embedding(observation)
-    # text_embedding = get_text_embedding(desc_dict[config['env_config']['env']])
     # CLIP model
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, preprocess = clip.load("ViT-B/32", device=device)
@@ -174,11 +116,11 @@ def get_embeddings_from_env(config):
     print("Image Embedding:", image_embedding, image_embedding.shape)
     print("Text Embedding:", text_embedding, text_embedding.shape)
 
-    image_embedding_random = random_encoder(output_dim=image_embedding.shape[1], input_shape=image_embedding.shape)
-    text_embedding_random = random_encoder(output_dim=image_embedding.shape[1], input_shape=image_embedding.shape)
+    # image_embedding_random = random_encoder(output_dim=image_embedding.shape[1], input_shape=image_embedding.shape)
+    # text_embedding_random = random_encoder(output_dim=image_embedding.shape[1], input_shape=image_embedding.shape)
 
-    # return image_embedding.cpu().numpy(), text_embedding.cpu().numpy()
-    return image_embedding_random, text_embedding_random
+    return image_embedding.cpu().numpy(), text_embedding.cpu().numpy()
+    # return image_embedding_random, text_embedding_random
 
 def find_similar_embedding(curr_image_embedding, curr_text_embedding, embedding_dict, threshold=0.9):
     best_weights_game = None
@@ -213,49 +155,12 @@ def rllib_loop(config, str_logger):
         args.stop_timesteps = 20000000
 
     print("program running for, ", args.stop_timesteps)
-    #load the config
-    #extract data from the config file
-    
-    # import socket
-    # machine = socket.gethostname()
-    
-    # with open(configs.resource_file + '/' + args.env_name + '.yaml', 'r') as cfile:
-    #     config_data = yaml.safe_load(cfile)
-    #     print(cfile)
-    
-    #update the args in the config.py file
-    # print("updating resource parameters")
-    # args.num_workers, args.num_envs, args.num_gpus, args.gpus_worker, args.cpus_worker, _, args.data_path = config_data[machine]
-
-    #datapaths are not loading properly fix this!
-    #if args.machine == 'iGpu11':
-    #    args.data_path = '/home2/kiran/'
-    
-    # config.update(
-    #             {"num_workers" : args.num_workers,
-    #             "num_envs_per_worker" : args.num_envs,
-    #             "num_gpus" : args.num_gpus, 
-    #             "num_gpus_per_worker" : args.gpus_worker, 
-    #             "num_cpus_per_worker": args.cpus_worker,
-    #             "train_batch_size": args.buffer_size,
-    #             "sgd_minibatch_size": args.batch_size
-    #             }
-    #     )
     
     if args.env_name=='beogym':
         config['env_config']['data_path']=args.data_path
     
     print(config)
 
-    #COMMENTED THIS OUT BECAUSE ITS TAKING SO MUCH SPACE
-    #copy the current codebase to the log directory
-    #path = Path(args.log + "/" + args.env_name + "/" + str_logger)
-    #path = Path(args.log + "/" + args.env_name + "/" + str_logger + "/beoenv")
-    #path.mkdir(parents=True, exist_ok=True)
-    #distutils.dir_util.copy_tree("/lab/kiran/beoenv/", args.log + "/" + str_logger + "/beoenv/")
-
-    ##Training starts
-    #if args.no_tune:
     if "multiagent" in config:
         algo = MultiPPO(config=config)
         print("Using MultiPPO")
@@ -268,10 +173,15 @@ def rllib_loop(config, str_logger):
     #get backbone and policy from setting.
     #you need to load the weights into the backbone or policy here!
 
+    
+    # if config['env_config']['env'] != configs.all_envs[0]:
+    #     policy_ckpt = Policy.from_checkpoint(args.log + "/" + args.env_name + "/" + args.temporal + "/" + args.set + "/" + str_logger.replace(config['env_config']['env'] + '/', '') + "/checkpoint")
+    #     plc.set_weights(policy_ckpt.get_weights())
+
     curr_image_embedding, curr_text_embedding = get_embeddings_from_env(config)
-    
+
     similar_weights_game = find_similar_embedding(curr_image_embedding, curr_text_embedding, embedding_dict)
-    
+
     curr_game_name = config['env_config']['env']
     if similar_weights_game is not None:
         print("Found similar embeddings, using previous policy weights.")
@@ -284,14 +194,6 @@ def rllib_loop(config, str_logger):
         print("No similar embeddings found, training new policy.")
         embedding_key = (tuple(curr_image_embedding.flatten()), tuple(curr_text_embedding.flatten()))
         embedding_dict[embedding_key] = config['env_config']['env']
-
-        
-        # TODO: change save policy logic
-
-    # print(config['env_config']['env'], configs.all_envs[0])
-    # if config['env_config']['env'] != configs.all_envs[0]:
-    #     policy_ckpt = Policy.from_checkpoint(args.log + "/" + args.env_name + "/" + args.temporal + "/" + args.set + "/" + str_logger.replace(config['env_config']['env'] + '/', '') + "/checkpoint")
-    #     plc.set_weights(policy_ckpt.get_weights())
 
     #if args.policy != None:
     #    backbone_ckpt = Policy.from_checkpoint('/lab/kiran/ckpts/trained/' + args.backbone).get_weights()
@@ -319,7 +221,7 @@ def rllib_loop(config, str_logger):
     # run manual training loop and print results after each iteration
     for _ in range(args.stop_timesteps):
         result = algo.train()
-        # embed()
+        #embed()
         # print(pretty_print(result))
 
         if curr_game_name not in mar_dict:
@@ -355,27 +257,7 @@ def rllib_loop(config, str_logger):
     algo.stop()
 
 
-def calculate_tnmr(mar_list, min_reward, max_reward):
-    normalized_rewards = []
-    for mar in mar_list:
-        if max_reward != min_reward:
-            normalized_reward = (mar - min_reward) / (max_reward - min_reward)
-        else:
-            normalized_reward = 1.0
-        normalized_rewards.append(normalized_reward)
-
-    tnmr = np.mean(normalized_rewards)
-    return tnmr
-
-# tnmr_values = {}
-# for game_id, mar_list in mar_dict.items():
-#     tnmr = calculate_tnmr(mar_list, min_rewards_dict[game_id], max_rewards_dict[game_id])
-#     tnmr_values[game_id] = tnmr
-#     print(f"TNMR for Game {game_id}: {tnmr:.2f}")
-
-
-import json
-#sequential learning    
+#sequential learning
 def seq_train(str_logger):
 
     print("SEQUENTIAL MODE!")
@@ -420,3 +302,8 @@ def seq_train(str_logger):
 
     with open("rewards_data.json", "w") as f:
         json.dump(data_to_save, f, indent=4)
+
+    embedding_dict_str_keys = {str(k): v for k, v in embedding_dict.items()}
+    with open("embedding_dict.json", "w") as f:
+        json.dump(embedding_dict_str_keys, f, indent=4)
+

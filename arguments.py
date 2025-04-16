@@ -24,11 +24,13 @@ def get_args():
         "--machine", type=str, default="", help="machine to be training"
     )
     parser.add_argument(
-        "--log", type=str, default="/lab/kiran/logs/rllib", help="config file for resources"
+        # "--log", type=str, default="/lab/kiran/logs/rllib", help="config file for resources"
+        "--log", type=str, default="/lab/liqiang/logs", help="config file for resources"
     )
 
     parser.add_argument(
-        "--ckpt", type=str, default="/lab/kiran/ckpts/pretrained/", help="directory for saving resources"
+        # "--ckpt", type=str, default="/lab/kiran/ckpts/pretrained/", help="directory for saving resources"
+        "--ckpt", type=str, default="/lab/liqiang/ckpts/", help="directory for saving resources"
     ) 
     parser.add_argument(
         "--env_name", type=str, default="atari", help="Environment name"
@@ -128,6 +130,14 @@ def get_args():
         "--local-mode",
         action="store_true",
         help="Init Ray in local mode for easier debugging.",
+    )
+
+    parser.add_argument('--alpha', type=int, default=5, help='Number of unique games')
+    parser.add_argument('--beta', type=int, default=10, help='Total number of games')
+    parser.add_argument('--path', type=str, help='Path to save agent and resources folder')
+    parser.add_argument("--run", type=int, default=1, help="Number of Run of all games")
+    parser.add_argument(
+        "--eval_agent", action='store_true'
     )
 
     args = parser.parse_args()
